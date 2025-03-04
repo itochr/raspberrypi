@@ -1,6 +1,6 @@
 # Raspberry Pi
 
-**Project Overview**
+**Project Overview**:
 This project leverages a **Raspberry Pi** with a **Sense HAT** attachment to collect environmental data such as temperature, humidity, and pressure every 30 minutes. The data is then stored in **AirTable** and transferred to **Google Cloud BigQuery** using **Airbyte** for storage and analysis. **dbt** (Data Build Tool) is used alongside BigQuery to transform the raw data into a more structured format, making it easier to analyze. The goal of the project is to create an efficient and automated pipeline for collecting, storing, and transforming environmental data for further analysis or visualization. Future improvements include integrating data visualization tools like Looker or Tableau to provide interactive dashboards and real-time data insights.
 
 ## **Technologies Used**
@@ -14,7 +14,7 @@ This project leverages a **Raspberry Pi** with a **Sense HAT** attachment to col
 2. Collect Sensor Data: Configure the Sense HAT to record temperature, humidity, and pressure readings at regular intervals, every 30 minutes.
 3. Store Data in AirTable: The collected data is automatically loaded into a table in AirTable, providing a simple, accessible interface for tracking and managing the data.
 4. Transfer Data to BigQuery: Using Airbyte, the data from AirTable is transferred to a BigQuery data warehouse for scalable storage and analysis.
-5. Transform Data with dbt: dbt (Data Build Tool) runs alongside BigQuery to transform the raw data into a more structured, analysis-ready format.
+5. Transform Data with dbt: dbt (Data Build Tool) runs alongside BigQuery to transform the raw data into a more structured, analysis-ready format. *(In progress)*
 
 
 ## **Future Improvements**
