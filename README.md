@@ -1,4 +1,4 @@
-# Raspberry Pi
+# Raspberry Pi Data Pipeline for Environmental Monitoring
 
 **Project Overview**:
 This project leverages a **Raspberry Pi** computer with a **Sense HAT** attachment to collect environmental data such as temperature, humidity, and pressure every 30 minutes. The data is then stored in **AirTable** and transferred to **Google Cloud BigQuery** using **Airbyte** for storage and analysis. **dbt** (Data Build Tool) is used alongside BigQuery to transform the raw data into a more structured format, making it easier to analyze. The goal of the project is to create an efficient and automated pipeline for collecting, storing, and transforming environmental data for further analysis or visualization. Future improvements include integrating data visualization tools like Looker or Tableau to provide interactive dashboards and real-time data insights.
