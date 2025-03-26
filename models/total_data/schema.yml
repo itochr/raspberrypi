@@ -1,0 +1,37 @@
+version: 2
+
+models: 
+  - name: Total_Data
+    description: "contains all data gathered from Raspberry Pi Sense HAT after removing metadata from Airbyte"
+    columns: 
+      - name: id
+        description: "auto-incrementing primary key for each row"
+        tests: 
+          - unique
+          - not_null
+
+      - name: timestamp
+        description: "datetime for each individual reading"
+        tests: 
+          - unique
+          - not_null
+
+      - name: temp_c
+        description: "temperature reading in Celsius"
+        tests: 
+          - not_null
+      
+      - name: temp_f
+        description: "temperature reading in Fahrenheit"
+        tests: 
+          - not_null
+      
+      - name: pressure
+        description: "pressure reading in hPa (hectopascals)"
+        tests: 
+          - not_null
+      
+      - name: humidity 
+        description: "humidity percentage reading"
+        tests: 
+          - not_null

@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: Averages_by_day
+    description: "calculates average temperature, humidity, and pressure from environmental readings"
+    
+    columns:
+      - name: date
+        description: "the date for which the averages are determined"
+        tests:
+          - unique
+          - not_null
+
+      - name: Avg_Temp_C
+        description: "average daily temperature in Celsius"
+        tests: 
+          - not_null
+
+      - name: Avg_Temp_F
+        description: "average daily temperature in Fahrenheit"
+        tests:
+          - not_null
+
+      - name: Avg_pressure
+        description: "average daily pressure in hPa (hectopascals)"
+        tests:
+          - not_null
+
+      - name: Avg_humidity
+        description: "average daily humidity percentage"
+        tests: 
+          - not_null
