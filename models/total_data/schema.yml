@@ -1,5 +1,13 @@
 version: 2
 
+sources:
+  - name: raw_raspberrypi_data
+    database: pacific-ethos-452022-u8   # BigQuery project
+    schema: raspberrypi 
+    tables:
+      - name: raspberry_pi_sense_hat_temperaturedata_tblyfNWl1E5P4J7qx
+        description: "raw data ingested from Airbyte"
+
 models: 
   - name: Total_Data
     description: "contains all data gathered from Raspberry Pi Sense HAT after removing metadata from Airbyte"
