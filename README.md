@@ -19,5 +19,7 @@ This project leverages a **Raspberry Pi** computer with a **Sense HAT** attachme
 
 ## **Future Improvements**
 1. Data Visualization: Integrate tools like Looker or Tableau to create interactive dashboards for better insights and visualization of temperature, humidity, and pressure trends over time.
-2. Optimized ETL Pipeline: Improve the ETL process for better performance, possibly incorporating tools like Apache Airflow or Kafka for scheduling and handling larger datasets.
-3. Advanced Analytics: Implement machine learning models to predict future environmental conditions based on historical data and trends, potentially integrating predictive insights into the dashboard.
+   ###Looker Studio Dashboard
+   [View the dashboard here](https://lookerstudio.google.com/reporting/b0eff32a-30a5-472f-9bbd-e0d09682c74a)
+3. Optimized ETL Pipeline: Improve the ETL process for better performance, possibly incorporating tools like Apache Airflow or Kafka for scheduling and handling larger datasets.
+4. Advanced Analytics: Implement machine learning models to predict future environmental conditions based on historical data and trends, potentially integrating predictive insights into the dashboard.
