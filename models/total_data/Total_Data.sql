@@ -1,3 +1,10 @@
+{{
+    config(
+        materialized='table'
+    )
+
+}}
+
 
 with Raw_Data as (
     SELECT id, timestamp, temp_c AS Temp_C, temp_f AS Temp_F, pressure AS Pressure, humidity AS Humidity
