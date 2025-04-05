@@ -4,5 +4,5 @@ SELECT
     MIN(Temp_C) AS Low_Temp_C,
     MAX(Temp_F) AS High_Temp_F,
     MIN(Temp_F) AS Low_Temp_F,
-FROM {{ ref('stg_temperature') }}
+FROM {{ ref('stg_raspberrypi_data') }}
 GROUP BY Date
