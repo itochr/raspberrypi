@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: daily_temperature_high_low
+    description: "Determines high and low temperature reading for each day"
+    
+    columns:
+      - name: date
+        description: "the date of the reading"
+        tests:
+          - unique
+          - not_null
+
+      - name: high_temp_c
+        description: "highest temperature for the day in Celsius"
+        tests: 
+          - not_null
+
+      - name: low_temp_c
+        description: "lowest temperature for the day in Celsius"
+        tests: 
+          - not_null
+
+      - name: high_temp_f
+        description: "highest temperature for the day in Fahrenheit"
+        tests: 
+          - not_null
+
+      - name: low_temp_f
+        description: "lowest temperature for the day in Fahrenheit"
+        tests: 
+          - not_null

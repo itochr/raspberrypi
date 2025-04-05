@@ -7,14 +7,14 @@
 
 
 with Raw_Data as (
-    SELECT id, timestamp, temp_c AS Temp_C, temp_f AS Temp_F, pressure AS Pressure, humidity AS Humidity
+    SELECT id, timestamp, temp_c, temp_f, pressure, humidity
     FROM {{ source('bigquery', 'raspberry_pi_sense_hat_temperaturedata_tblyfNWl1E5P4J7qx') }}
     ORDER BY id
 )
 
 SELECT * FROM Raw_Data 
 WHERE timestamp is NOT NULL
-    AND Temp_C is NOT NULL
-    AND Temp_F is NOT NULL
-    AND Pressure is NOT NULL
-    AND Humidity is NOT NULL
+    AND temp_c is NOT NULL
+    AND temp_f is NOT NULL
+    AND pressure is NOT NULL
+    AND humidity is NOT NULL
