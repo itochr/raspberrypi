@@ -8,7 +8,7 @@
 
 with Raw_Data as (
     SELECT id, timestamp, temp_c AS Temp_C, temp_f AS Temp_F, pressure AS Pressure, humidity AS Humidity
-    FROM {{ ref('raw_raspberrypi_data') }}
+    FROM {{ source('bigquery', 'raspberry_pi_sense_hat_temperaturedata_tblyfNWl1E5P4J7qx') }}
     ORDER BY id
 )
 
