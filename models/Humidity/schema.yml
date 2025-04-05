@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: daily_humidity_high_low
+    description: "Determines high and low humidity reading for each day"
+    
+    columns:
+      - name: date
+        description: "the date of the reading"
+        tests:
+          - unique
+          - not_null
+
+      - name: high_humidity
+        description: "highest humidity for the day"
+        tests: 
+          - not_null
+
+      - name: low_humidity
+        description: "lowest humidity for the day"
+        tests: 
+          - not_null
