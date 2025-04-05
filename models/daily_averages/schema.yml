@@ -11,22 +11,22 @@ models:
           - unique
           - not_null
 
-      - name: Avg_Temp_C
+      - name: avg_temp_c
         description: "average daily temperature in Celsius"
         tests: 
           - not_null
 
-      - name: Avg_Temp_F
+      - name: avg_temp_f
         description: "average daily temperature in Fahrenheit"
         tests:
           - not_null
 
-      - name: Avg_pressure
+      - name: avg_pressure
         description: "average daily pressure in hPa (hectopascals)"
         tests:
           - not_null
 
-      - name: Avg_humidity
+      - name: avg_humidity
         description: "average daily humidity percentage"
         tests: 
           - not_null
