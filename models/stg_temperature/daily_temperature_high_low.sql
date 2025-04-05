@@ -1,8 +1,8 @@
 SELECT
-    DATE(timestamp) AS Date,
-    MAX(Temp_C) AS High_Temp_C,
-    MIN(Temp_C) AS Low_Temp_C,
-    MAX(Temp_F) AS High_Temp_F,
-    MIN(Temp_F) AS Low_Temp_F,
+    DATE(timestamp) AS date,
+    MAX(Temp_C) AS high_temp_c,
+    MIN(Temp_C) AS low_temp_c,
+    MAX(Temp_F) AS high_temp_f,
+    MIN(Temp_F) AS low_temp_f,
 FROM {{ ref('stg_raspberrypi_data') }}
-GROUP BY Date
+GROUP BY date
