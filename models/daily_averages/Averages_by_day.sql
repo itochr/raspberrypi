@@ -5,4 +5,4 @@ SELECT
   ROUND(AVG(pressure),2) AS avg_pressure, 
   ROUND(AVG(humidity),2) AS avg_humidity
 FROM {{ ref('stg_raspberrypi_data') }} 
-GROUP BY Date
+GROUP BY date
