@@ -14,7 +14,7 @@ This project leverages a **Raspberry Pi** computer with a **Sense HAT** attachme
 2. Collect Sensor Data: Configure the Sense HAT to record temperature, humidity, and pressure readings at regular intervals, every 30 minutes.
 3. Store Data in AirTable: The collected data is automatically loaded into a table in AirTable, providing a simple, accessible interface for tracking and managing the data.
 4. Transfer Data to BigQuery: Using Airbyte, the data from AirTable is transferred to a BigQuery data warehouse for scalable storage and analysis.
-5. Transform Data with dbt: dbt (Data Build Tool) runs alongside BigQuery to transform the raw data into a more structured, analysis-ready format. *(In progress)*
+5. Transform Data with dbt: dbt (Data Build Tool) runs alongside BigQuery to transform the raw data into a more structured, analysis-ready format. 
 
 
 ## **Future Improvements**
